@@ -24,12 +24,12 @@ Here is a rough comparison of the memory management techniques.
   * Double-frees.
   * Memory leaks.
 * Automatic like Java:
+  * Runtime overhead.
   * Garbage collection pauses.
   * Destructor delays.
 * Scope-based like C++:
-  * Complex, opt-in by programmer (on C++).
-  * Circular references can lead to memory leaks
-  * Potential runtime overhead
+  * Complex, opt-in by programmer.
+  * Potential for use-after-free.
 * Compiler-enforced and scope-based like Rust:
   * Some upfront complexity.
   * Can reject valid programs.
